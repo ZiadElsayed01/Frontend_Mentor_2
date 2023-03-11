@@ -1,0 +1,86 @@
+:root {
+  --Red-color: hsl(0, 78%, 62%);
+  --Cyan-color: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+  --Very-Dark-Blue: hsl(234, 12%, 34%);
+  --Grayish-Blue: hsl(229, 6%, 66%);
+  --Very-Light-Gray: hsl(0, 0%, 98%);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.container {
+  margin: 30px 0;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Start Text */
+.text .container {
+  flex-direction: column;
+  text-align: center;
+}
+.container .l1 {
+  font-size: 1.6em;
+  color: var(--Very-Dark-Blue);
+  font-weight: 200;
+}
+.container h1 {
+  color: var(--Very-Dark-Blue);
+  font-size: 1.6em;
+  margin-bottom: 10px;
+}
+.container .l3 {
+  padding: 0 25px;
+  color: var(--Grayish-Blue);
+  text-align: center;
+}
+/* End Text */
+
+/* Start Cards */
+.cards .box {
+  position: relative;
+  margin: 15px;
+  padding: 20px;
+  width: 300px;
+  height: 200px;
+  border-radius: 5px;
+  box-shadow: 0 0 8px var(--Grayish-Blue);
+  font-size: 0.8em;
+  border-top: 3px solid;
+}
+.cards .box:first-child {
+  border-color: var(--Cyan-color);
+}
+.cards .box:last-child {
+  border-color: var(--Blue);
+}
+.cards .col .box:first-child {
+  border-color: var(--Red-color);
+}
+.cards .col .box:last-child {
+  border-color: var(--Orange);
+  margin-top: 30px;
+}
+.box h2 {
+  text-transform: capitalize;
+  color: var(--Very-Dark-Blue);
+}
+.box p {
+  margin-top: 5px;
+  width: 90%;
+  color: var(--Grayish-Blue);
+}
+.box img {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+}
+/* End Cards */
